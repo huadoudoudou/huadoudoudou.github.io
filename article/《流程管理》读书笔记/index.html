@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          《流程管理》读书笔记 - 花豆 | Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://www.wangyinrui.com/article/《流程管理》读书笔记/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/article_header/article_bg.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#笔记" title="笔记">笔记</a>
+                            
+                        </div>
+                        <h1>《流程管理》读书笔记</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by wangyinrui on
+                            2018-11-19
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">花豆</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h3><span id="书籍信息">书籍信息</span></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">书籍名称：流程管理</th>
+<th style="text-align:left">作者：王玉荣、葛新红</th>
+<th style="text-align:left">出版社：北京大学出版社</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">版次：5</td>
+<td style="text-align:left">ISBN：9787301266373</td>
+<td style="text-align:left">出版时间：2016-01-01</td>
+</tr>
+<tr>
+<td style="text-align:left">页数：276（16开）</td>
+<td style="text-align:left">字数：319000</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3><span id="阅读总结">阅读总结</span></h3>
+<p>  因为工作涉及的内容包括流程设计与优化，所以前辈推荐了这本书看。书籍介绍了好的流程是什么样的，如何控制团队流程，如何把好的流程在企业中推广等。比较有趣的是书籍不是按照章-节-小节的结构来编排的，采用了一种直接罗列要点的方式，形式上比较扁平。<br>
+   不过全书虽然洋洋洒洒地展开了很多内容，但并不是所有条目都一目了然、具有操作性，同时因为我目前还是萌新，对于企业管理、团队管理当然都是一抹黑，所以能学以致用的点并不是很多。当然，开卷有益，对自己的工作和生活管理多少还是有帮助的。那么就还是来看看书籍的梗概，以及在我的认知范围里get到的知识点吧~</p>
+<h3><span id="书籍概要">书籍概要</span></h3>
+<p>   顾名思义，这本书讲的就是流程管理的基本内容，一共有九章、49条要点。</p>
+<ul>
+<li><strong>第一章</strong>：介绍了流程的定义、组成要素，如何与业务相结合，流程优化与组织结构调整的关系。</li>
+<li><strong>第二章</strong>：介绍了端到端的流程是什么，企业流程的分类分级和注意事项。</li>
+<li><strong>第三章</strong>：介绍了流程好坏的判断标准，好流程的特征，分析了几个考核体系。</li>
+<li><strong>第四章</strong>：介绍了流程的几个业务原则。</li>
+<li><strong>第五章</strong>：介绍了如何筛选关键流程，优化流程中的无效活动，提升整体流程效率。</li>
+<li><strong>第六章</strong>：介绍了如何采用计算机实现岗位标准化。</li>
+<li><strong>第七章</strong>：介绍了如何在企业中推进和落实流程管理。</li>
+<li><strong>第八章</strong>：介绍了如何做好流程的持续评估和改进。</li>
+<li><strong>第九章</strong>：介绍了互联网时代的流程管理新趋势，包括回归客户价值本质、与客户互动、大数据管理等。</li>
+</ul>
+<h3><span id="要点总结">要点总结</span></h3>
+<p><strong>1. 部门 V.S. 流程</strong></p>
+<blockquote>
+<p>流程指的是跨部门、跨岗位工作流转的过程。<br>
+重部门、清流程，会导致部门之间推卸责任。</p>
+</blockquote>
+<p><strong>2. 流程六要素</strong></p>
+<blockquote>
+<p>① 流程的输入资源，② 流程中的若干活动，③ 活动的相互作用（串行还是并行，先后顺序，即流程的结构），④ 输出结果，⑤ 顾客，⑥ 最终流程创造的价值</p>
+</blockquote>
+<p><strong>3. 流程如何与业务紧密结合</strong></p>
+<blockquote>
+<p>流程管理最朴素的原理：让具体干活的人知道怎么干活<br>
+<strong>具体注意事项</strong>：<br>
+（1） 要用现场实录的、一个动作一个动作的流程，不要抽象概括的流程；<br>
+（2）不要流水账流程，要多一些维度和属性信息，集成各管理体系的要求（做流程图的注意事项：横排分类：部门和责任人，竖列显示：流程，最后一列：备注；在节点添加质量要求、时间要求等）；<br>
+（3）跳出流程来认识流程，不要只描述具体流程。（只描述具体流程会导致： 业务活动切分不明确，不同流程之间重复或者遗漏；不同的人对流程划分的细碎程度不同； 流程上下游之间的关系不清晰）</p>
+</blockquote>
+<p><strong>4. 流程的层次和分类</strong></p>
+<blockquote>
+<p>第一层：战略控制层。企业计划，以会议管理、经营分析、预算考核为基础；<br>
+第二层：流程执行层。以业务流程、岗位描述和绩效测评为架构；<br>
+第三层：支撑平台。包括ERP（企业资源规划）、CRM（客户管理管理）、PDM（产品数据管理）等。</p>
+</blockquote>
+<blockquote>
+<p>A类活动：管控活动（设计各级别的决策、审批、评审、签字、授权等）<br>
+B类活动：专业活动（真正产生、位移和交付的活动，如市场调研、设计、制造、发货等）</p>
+</blockquote>
+<p><strong>5. 流程与红海、蓝海</strong></p>
+<blockquote>
+<p>蓝海：新鲜事；红海：曾经做过的业务、遇到的情景和犯过的错误<br>
+流程管理是蓝海和红海之间的过渡利器。企业一旦遇到蓝海的“新鲜事”，只要这个事情发生过一次，应该马上转变为红海的“不新鲜事”，流程应该迅速跟上，避免犯错。</p>
+</blockquote>
+<p><strong>6. 端到端流程与盘点tips</strong></p>
+<blockquote>
+<p>是 <strong>“两头在外”的流程</strong> ，要做到全局优化，而非部门内部或相邻部门的优化。<br>
+企业进行流程架构梳理的经验： <strong>宁连不断，频率分开，亮点在节，追求在章，命名两端，宁缺毋滥、会议紧牵</strong></p>
+</blockquote>
+<p><strong>7. 流程好坏的判断标准</strong></p>
+<blockquote>
+<p><strong>以客户为导向的流程</strong> 流程必须做正确的事，能够为客户增值，使得客户愿意付费。<br>
+<strong>提供正确的服务的流程</strong> 企业需要满足客户的显在和潜在需要。<br>
+<strong>响应速度快的流程</strong> 如果行动缓慢，就会让客户承受不确定性的压力。速度快还意味着流程借口的简易化。<br>
+<strong>设置审批点</strong> 对于持谨慎策略的公司，将风险控制摆在第一位，非关键性的审批点依然是增值的。</p>
+</blockquote>
+<p><strong>8. 建立面向流程的考核体系</strong></p>
+<blockquote>
+<p><strong>SETP1 明确目标</strong><br>
+（1）若为了促进流程的持续改进：当务之急不是考核，而是找出需要紧迫优化的流程，<strong>记录流程的表现情况。在记录中发现问题</strong>，流程什么时候表现好，什么时候表现差，影响因素是什么，分析问题找到改进方法。<br>
+（2）若解决不同部门的割裂不配合问题：关键流程，协议考核，内外部承诺。<br>
+（3）若是为了提升业绩指标：相关的流程，涉及哪些部门和岗位，如何影响指标，关键点，谁来控制整个工作的开展，持续动力。<br>
+（4）若是为了保障执行：关键流程，关键控制点，责任人，责任岗位，持续观测，专项考核。<br>
+<strong>STEP2 筛选流程</strong><br>
+从客户导向、行业竞争力因素等多维度入手，做流程重要度分析，之后遵循先点后面、先易后难、先业务后职能的原则逐步实施。 先试点后推广。<br>
+<strong>STEP3 设定指标</strong><br>
+不要太复杂。不要过多。<br>
+<strong>STEP4 选择对象</strong><br>
+<strong>STEP5 定目标</strong><br>
+SMART原则：具体、可量化、可实现、切合实际、明确的实现时间（设置分阶段的改进目标） 确定的前提是对当前值进行准确的衡量。<br>
+<strong>STEP 6 比数据</strong> 采集实际运行值，与目标值作对比，做统计分析。<br>
+<strong>STEP 7 出结果</strong><br>
+<strong>STEP8 做行动</strong></p>
+</blockquote>
+<p><strong>9. 流程业务原则的提炼</strong></p>
+<blockquote>
+<p>流程业务原则的提炼来自于两个方面：企业战略规划和经验总结。</p>
+<p>提炼的注意要点包括：<br>
+（1）各级特别是高职位的人根据原则进行管理；<br>
+（2）原则不是口号，要衔接工作大纲和具体日常工作；eg丽思卡尔顿酒店的黄金标准<br>
+（3）日常提炼，日常落实，保障执行。<br>
+（4）提炼出的原则要书面化，写的醒目，让高层知道。</p>
+</blockquote>
+<blockquote>
+<p>业务提炼从初级到高级的行为：<br>
+（1）不知道→知道；<br>
+（2）虽然知道但是具体执行时有人疏忽→和管控措施相结合；<br>
+（3）企业自己能知道并且做到，但是客户不知道→主动和客户沟通；<br>
+（4）知道，执行但在另一个问题上重复犯低级错误→形成发现问题–解决问题的长效机制。</p>
+</blockquote>
+<p><strong>10. 流程管理的原则</strong></p>
+<blockquote>
+<p>原则一：组织架构以产出为中心，而不是以任务为中心<br>
+原则二：责任相关<br>
+原则三：信息处理系统，低层级部门可以自己处理信息<br>
+原则四：将各地分散的资源视为一体<br>
+原则五：联系并行工作<br>
+原则六：决策权力下放<br>
+（<em>如：人事丧假制度，从自己上报、上交材料、上层审批，到“如果你有必要参加亲戚朋友的葬礼，请通知督导人员”</em>）<br>
+原则七：流程多样化<br>
+原则八：单点接触顾客<br>
+原则九：信息一次采集，数据共享</p>
+</blockquote>
+<p><strong>11. 如何筛选关键的业务流程</strong></p>
+<blockquote>
+<p>工具一：流程重要度选择矩阵，确定重要流程（创造价值，独特性）×（战略性、战术性、支持性）<br>
+工具二：流程有限选择矩阵，确定流程优化的优先级 （实施复杂性× 潜在收益：复杂性/风险低潜在收益大&gt;复杂性低潜在收益小&gt;复杂性高潜在收益高&gt;复杂性高潜在收益低）</p>
+</blockquote>
+<p><strong>12. 如何进行审批流程的优化</strong></p>
+<blockquote>
+<p>攻略一 变决策点为沟通点，把审批变成定期的报告和备案<br>
+攻略二 提炼规则 实现事前管理<br>
+攻略三 决策流程优化1W2H</p>
+<p>When：管理前置，流程简化不等于流程图简化，而是管理规范化和精细化<br>
+How：每一个决策点都要明确决策依据和决策方式<br>
+How much：分析流程频率</p>
+</blockquote>
+<p><strong>13. 如何优化流程中的无效活动——ESIA</strong></p>
+<blockquote>
+<p>Eliminate：清除多余的非增值活动。（过量产出，等待，反复加工，多余库存，缺陷失误，重复劳动，相似活动采用不同流程，反复检验，跨部门协调）<br>
+Simplify：简化（表格，程序，沟通，物流）<br>
+Integrate：整合（活动，团队，上下游）<br>
+Automate：自动化（累活、乏味的活，数据采集和传输，数据分析）<br>
+Establish：填补（归档产出、积累知识，搜索知识库调用知识，评估总结）</p>
+</blockquote>
+<p><strong>14. 如何在企业中成功推进流程管理</strong></p>
+<blockquote>
+<p>首先解决领导重视的问题：作为中层，应该多考虑怎么帮助领导分忧、怎么把领导关心的事和自己的工作推动结合起来，比较现实有效。<br>
+其次在推进过程中：<br>
+（1）优化工作启动之初，就要把流程负责人成为责任中心； &gt;（2）优化过程的重点是目标问题导向和共识的形成；<br>
+（3）流程优化后的推行依然需要计划细致严谨。优化的完成不是以文件的完成为标志，而是以落地实施为标志。</p>
+</blockquote>
+<blockquote>
+<p>优化过程可以分为三步：<br>
+（1）调研总结现状问题，建立流程优化框架（包括业务组织职责分工、流程优化的目标、整体框架、相关术语和分类定义的统一等），明确优化的整体方向；<br>
+（2）具体流程的优化，在运作部门回见达成共识；<br>
+（3）表单模板的优化，建立易于落实的工具。</p>
+</blockquote>
+<p><strong>15. 落实流程刚性的八项关键举措</strong></p>
+<blockquote>
+<p>分析流程不执行、不落地的原因，可以从三方面入手： 不知道→举措1：对流程优化方案达成共识；举措2：加强对流程的培训宣导。 不合理（流程与实际业务脱离）→举措3：落实责任人清晰的职责和权力；举措4：对流程KPI的评价和回顾 不执行（主观上不愿按照流程开展工作）→举措5：流程电子化；举措6：定时开流程管理的会议；举措7 流程的稽查和测评；举措8：文化宣导</p>
+</blockquote>
+<p><strong>16.“互联网+”转型落地，始于流程的顶层设计</strong></p>
+<blockquote>
+<p>“互联网+”转型的模式： （1）以用户为中心的内部组织和供应链流程重构； （2）对原有价值链的延伸，更紧密地整合产业链上下游； （3）从整个行业格局考虑产业链的重构，跨界打造行业化的新平台。</p>
+</blockquote>
+<p><strong>17. 如何实现快速迭代、更具柔性的流程管理</strong></p>
+<blockquote>
+<p>（1）在组织保障上，建立常设的变革管理办公室，实现以流程为主线的管理体系集成和总和综合改进，保证快速响应；<br>
+（2）在治理机制上，提高对环境变化、改进建议的快速识别和响应，缩短对流程回顾优化的周期；<br>
+（3）在变革能力上，行动式学习能力成为重要的能力，需要流程管理者掌握行动式学习的群策群力、团队学习和思考工具，行动、认知、反思、再行动；<br>
+（4）工作重心不是完成流程文件的规范书里，使流程漂亮地呈现在书面文件里，而是切实推进以客户为中心的流程意识，将面向流程的协同方法贯彻落实在员工的行为之中，让改变发生。</p>
+</blockquote>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/article/old-thing-1/" data-toggle="tooltip" data-placement="top" title="【旧事重提系列之一】一半阴雨，一半艳阳">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                </ul>
+
+                <br>
+                
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+                    <!-- disqus 评论框 start -->
+                    <div class="comment">
+                        <div id="lv-container" data-id="city" data-uid="MTAyMC80MTEyMC8xNzY0NQ=="></div>
+                    </div>
+                    <!-- disqus 评论框 end -->
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    <style>
+      span.toc-nav-number{
+        display: none
+      }
+    </style>
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">书籍信息</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">阅读总结</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">书籍概要</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">要点总结</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#笔记" title="笔记">笔记</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+    <!-- 来必力City版公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+    
+           if (typeof LivereTower === 'function') { return; }
+    
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+    
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- 来必力City版 公共JS代码 end -->
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; wangyinrui 2019 
+                    <br>
+                    Theme by <a href="http://www.huweihuang.com">胡伟煌</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://www.wangyinrui.com">花豆</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=huadoudoudou&repo=huadoudoudou.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://www.wangyinrui.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'r45fhy7653897235wg5ye709d930f62e';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://www.wangyinrui.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

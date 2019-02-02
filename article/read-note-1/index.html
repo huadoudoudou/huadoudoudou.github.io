@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          他们就是热爱读书 - 花豆 | Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://www.wangyinrui.com/article/read-note-1/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/article_header/article_bg.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#笔记" title="笔记">笔记</a>
+                            
+                        </div>
+                        <h1>他们就是热爱读书</h1>
+                        <h2 class="subheading">——《如何去读一本书》读书笔记</h2>
+                        <span class="meta">
+                            Posted by wangyinrui on
+                            2018-12-03
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">花豆</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h3><span id="书籍信息">书籍信息</span></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">书籍名称：如何去读一本书</th>
+<th style="text-align:left">作者：[英]弗吉尼亚·伍尔夫 （吴瑛 译）</th>
+<th style="text-align:left">出版社：江苏凤凰文艺出版社</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ISBN：9787559411219</td>
+<td style="text-align:left">出版时间：2017年11月第1版</td>
+<td style="text-align:left">页数：266（16开）</td>
+</tr>
+<tr>
+<td style="text-align:left">阅读时长：3h</td>
+<td style="text-align:left">字数：127千字</td>
+<td style="text-align:left">类型：文艺/历史/理论</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3><span id="读书总结">读书总结</span></h3>
+<p>  坦白来讲，我并不熟悉伍尔夫，也没有领悟到作者要传达的全部想法。这不是作者的问题，是因为我对英国文学不熟悉的缘故。不过靠着对简·奥斯汀、《简·爱》和《呼啸山庄》的残存印象，伍尔夫的解读让我感到惊喜。那么不妨想象，如果书里提到的作家都是我所拜读过的，应该是很棒的阅读体验。所以<strong>不如把这本书当做英国文学种草清单：D</strong>，等把哈代、蒙田、乔治·艾略特等人的作品一一读过，重温此书，一定有更深的感悟。<br>
+  虽然是初相识，但觉得伍尔夫是个聪明有趣的人，因为她观点明确又写得明白，文字俏皮活泼，比喻精巧又妥帖，文章的上下文关联性强，读起来很舒服，摘抄的时候单拎出来一句话，就像把鱼从水里捞起来，失去了原本的鲜活。<br>
+  虽然不能完全get伍尔夫的所有点，但是就我目前的个人经验而言，不少观点也激起了共鸣。总结一下吧：</p>
+<ul>
+<li><strong>读书的独立性：有关读书的建议就是让他们不要听从建议，而是要听从直觉，凭借自身的理性思维，得出自己的结论。独立性才是一个读者所拥有的最重要的品质。</strong></li>
+</ul>
+<p>  我个人认为读书是一件私人的事，每个人的兴趣点不同，想看的书自然也不一样，至于微博上常见的“必读的100本书”之类的书单，看起来适合所有人，实际上恰恰相反，机械的推荐可能会给想要开始读书的人造成障碍。如果想要开始看书，还是从自己的兴趣点着手比较好。<br>
+  </p>
+<ul>
+<li><strong>读书的第一步：阅读。不要向作者发号施令，而是要努力变成作者本人，我们应是作者的合作者和同谋。</strong></li>
+</ul>
+<p>  关于“作者的合作者和同谋”这一认知，真的不能更赞同了。若干年前，所有的书里，我只认《红楼梦》。认为所谓的“四大名著”，其他三本都不值一提。抱着这样的想法打开《水浒传》，只觉得满篇都是无聊的打打杀杀，毫无趣味。直到若干年后，我不再偏激，心态平和地重看《水浒传》，才发现其实相当有趣。当然了，《红楼梦》依然是我心中最好的书：）。</p>
+<ul>
+<li><strong>读书的第二步：由阅读、评判和比较，这对想象力、洞察力和学识都提出了很高的要求。</strong></li>
+</ul>
+<p>  之前一直以为文学评论就是一群写不好文章又眼高于顶的人在乱点评，直到看到了傅雷先生对张爱玲作品的评论（<em>傅雷：《论张爱玲的小说》</em>），才发现一篇好的点评原来是鞭辟入里、一针见血的。我在阅读中产生的好的、不好的感受，都只是强大的框架下一点点散乱的小线头而已。学海无涯，每一个领域似乎只有在知之甚少的时候才会产生不过尔尔之感。</p>
+<ul>
+<li><strong>再多精微至极和教条学究的评定都抵不过普通读者未受文学偏见腐化的常识。</strong></li>
+</ul>
+<p>  伍尔夫仿佛是为了安慰作为普通读者的我一样，专门写了个短篇《普通读者》。写到普通读者虽然“会不停地在脑海中为自己搭建一些站不住脚的框架结构”，“永远是匆忙地做些肤浅而失准的评论”，但是，“或许将一些想法和观点记录下来还是值得的，这些只言片语虽然本身不重要，但是却能左右作者的荣誉”。哈哈哈，读起来又汗颜又宽慰了。所以还是放心地读起来吧。</p>
+<ul>
+<li><strong>他们就是热爱读书。</strong></li>
+</ul>
+<p>  读书有什么用呢？作者也做出了几个回答，最能引起共鸣的是这段：“我有时会遐想，当最后的审判日来临，那些伟大的征服者、律师、统治者前来领取他们的奖赏——属于他们的皇冠、桂冠以及雕刻在永不磨灭的大理石上的不朽的名字。此时，万能的上帝看见我们臂膀里夹着书，会转过身对圣彼得不无妒忌地说：‘看，这些人不需要任何奖赏，我们也没有什么能给他们的。他们就是热爱读书。’”<br>
+  有人说，读书的投入产出比太低。是的，看完一本书，并不会产生什么立竿见影的效果。但是一打开书本，就静下心来，能跨越时代，和最顶尖的人对话，不是最奢侈的享受吗？又或者，之所以打开书本，不需要太多理由，就是热爱读书罢了。</p>
+<ul>
+<li><strong>活动和变化是我们存在的精髓，僵化就意味着死亡</strong></li>
+</ul>
+<p>  闲得无聊的时候就忍不住想，什么生活是我想要的。截至目前，我并不知道确切的答案。不过我发现了自己不想要什么样的生活。僵化意味着死亡。以前我一直以为，持续学习是一个自然而然的过程。最近发现不是。一旦脱离了学校，进入循环的工作机器中，实际上如果不是刻意提醒自己要折腾，就很容易沉湎于慵懒和机械的日常。而人在停止折腾的那一刻心就老了。</p>
+<ul>
+<li><strong>当我在书架上寻找，发现人们无从知晓十八世纪以前的女性，这样的状态是令人悲叹的。我们经常在伟人的传记中瞥见她们，她们转瞬又消失在背景里，让我觉得她们的一个眼色、一声大笑或许还有一滴眼泪，都被隐藏了起来。</strong></li>
+</ul>
+<p>  所谓“千红一窟、万艳同杯”，不过如此了。刚看到这一句的时候我还在骄傲地想着，还好我们有《红楼梦》。可是想一想，我们似乎也只有红楼梦了。十二钗的智慧哪一个在男儿之下，到头来也不过是“好梦随云散，飞花逐水流”。突然明白了李清照的可贵。</p>
+<hr>
+<h3><span id="书籍摘抄">书籍摘抄</span></h3>
+<p><em>  其实最近同时在看好几本书，只不过做摘抄实在是太累了，早都看完了，都还没有抄完。所幸这本书要摘抄的点比较少，先做完，列于下。之后的笔记，可能就放弃摘抄环节了。-_-||</em></p>
+<h4><span id="如何去读一本书">如何去读一本书</span></h4>
+<blockquote>
+<p>  事实上，当我们给别人提有关读书的建议时，最好就是让他们不要听从建议，而是要听从直觉，凭借自身的理性思维，得出自己的结论。……独立性才是一个读者所拥有的最重要的品质。</p>
+</blockquote>
+<blockquote>
+<p>  但是，想要享受自由，我们对自己也要有约束。我们必须当场自我修养，学会准确而有力地运用自己的精力。</p>
+</blockquote>
+<blockquote>
+<p>  我们从何入手？很少有人询问书本能带给我们什么。不要向作者发号施令，而是要努力变成作者本人，我们应是作者的合作者和同谋。如果你一开始就退缩不前，观望慎言，或是评头论足，你就无法从阅读中获取尽可能多的价值。但是，如果你能尽量敞开心扉，那么从书本的前几句话开始，原先那些不易察觉的词语和隐含之意就会把你带入常人无法达到的生命状态，很快你就会发现作者正在给予或试图给予你的东西是非常明确的。</p>
+</blockquote>
+<blockquote>
+<p>  或许，要想了解小说家创作的各种要素，最快捷的方式不是阅读，而是写作，如此才能亲自体会一把选词造句的艰难险阻。</p>
+</blockquote>
+<blockquote>
+<p>事实是小说最低级的能力。</p>
+</blockquote>
+<blockquote>
+<p>  诗人永远与我们处在相同的时代。刚读诗的时候，我们的身心是集中而收缩的，如同受到了个人情绪的强烈冲击。紧接着，这种情绪开始在我们心底泛开阵阵涟漪，触及我们遥远的感觉，发出声响和评论，以激发我们的共鸣和沉思。</p>
+</blockquote>
+<blockquote>
+<p>  阅读的第二步，是由阅读、评判和比较组成的过程。你得抛开眼前的书本继续阅读，同时对种种形象进行比较。前提是，你要博览群书，还要有相当的理解力。需要有极高的想象力、洞察力和学识。</p>
+</blockquote>
+<blockquote>
+<p>  即使得出的结果与他人相左，即使我们的判断是错误的，我们的品味以及那能触动我们全身的感觉，仍然是我们主要的照明灯。当我们的品味已经贪婪地尝试过各种书籍而终于停歇下来，我们不再阅读，而是想要寻找现实生活的各种差别、矛盾组成的更广阔的空间。我们的品味开始发生转变，不再那么贪婪，而是更注重思考了。</p>
+</blockquote>
+<blockquote>
+<p>  （在形成了可以归纳书籍特点的能力后，我们建立规则）但是，规则在其与书籍的接触中要不断地被打破，这样才会有生命力。为了在艰难的尝试中稳住自己，我们可以求助于文学评论家。但是只有当他们的裁决与我们所想的相冲突时，我们才能理解他们，甚至甘愿折服于他们的观点。</p>
+</blockquote>
+<blockquote>
+<p>  我有时会遐想，当最后的审判日来临，那些伟大的征服者、律师、统治者前来领取他们的奖赏——属于他们的皇冠、桂冠以及雕刻在永不磨灭的大理石上的不朽的名字。此时，万能的上帝看见我们臂膀里加着书，会转过身对圣彼得不无妒忌地说：“看，这些人不需要任何奖赏，我们也没有什么能给他们的。<strong>他们就是热爱读书。</strong>”</p>
+</blockquote>
+<h4><span id="普通读者">普通读者</span></h4>
+<blockquote>
+<p>  “我很高兴能与普通读者的想法不谋而合。因为，在决定一个诗人的荣誉时，再多精微至极和教条学究的评定都抵不过普通读者未受文学偏见腐化的常识。”——Samuel Johnson</p>
+</blockquote>
+<blockquote>
+<p>  普通读者“会不停地在脑海中为自己搭建一些站不住脚的框架结构”，“永远是匆忙地做些肤浅而失准的评论”，但是，“或许将一些想法和观点记录下来还是值得的，这些只言片语虽然本身不重要，但是却能左右作者的荣誉”。</p>
+</blockquote>
+<h4><span id="寻找真实的多萝西华兹华斯">寻找真实的多萝西·华兹华斯</span></h4>
+<blockquote>
+<p>  多萝西会将自己眼前所见精确地记录下来，文笔既淳朴又优美。我们并不能改变什么，也不得反抗什么；我们只能接受并努力地理解大自然传递给我们的信息。</p>
+</blockquote>
+<blockquote>
+<p>  随着一个个简短的记录慢慢在我们心中展开，我们眼前豁然呈现一片开阔的图景。我们发现朴实无华的记述紧扣着描写对象，我们只需照着她文字的轨迹看去，就能如实看到她所见的事物。诗人可以靠最简单的事实，通过将他们有序地铺陈，让各种描写深浅得当、紧凑耐读，从而为我们还原整个景象。</p>
+</blockquote>
+<blockquote>
+<p>  得益于经常训练和运用观察力，她已经非常敏锐娴熟。在外步行一天，就能给她心灵的眼镜储存下大量的奇闻异事，足够她在闲暇时慢慢整理。</p>
+</blockquote>
+<blockquote>
+<p>  “月光在不经意间投射进来，洒下的清辉如同是冲淡的宝石。”</p>
+</blockquote>
+<blockquote>
+<p>  <strong>“我们只要看看身边，就会发现自己是幸福的。”</strong></p>
+</blockquote>
+<h4><span id="走进简奥斯汀的正确方式">走进简·奥斯汀的正确方式</span></h4>
+<blockquote>
+<p>  “你要碰上一个不声不响、专门刻画人物的聪明人，着实是很可怕的！”</p>
+</blockquote>
+<blockquote>
+<p>  她的故事是什么样的呢？不过是个乡村舞会，几对舞伴见了面，在舞池中牵起手，然后简单地吃吃喝喝，最后在结局处折腾一下。整个故事没什么悲剧，也没什么英雄色彩。然而，不知是为什么，这个无足轻重的场景虽然表面严肃，却能够打动你。简·奥斯汀的内心远比表面包含更深刻的情感。虽然在表面上，她展现给我们的都是琐碎小事，但却又包含着什么，能够在读者心中放大，给外表看来如此琐碎的生活场景赋予永恒感。</p>
+</blockquote>
+<h4><span id="简析简爱和呼啸山庄">简析《简·爱》和《呼啸山庄》</span></h4>
+<blockquote>
+<p>  不同于思维更加开阔的作家，以自我为中心、受自我限制的作家具有一种独特的力量。他们把所有的印象紧压在自己狭小的思想空间中，深深打上自己的烙印，他们思考所产生的一切都带有个人印象的痕迹。勃朗特姐妹的意图和她的语言密不可分，属于一种情绪，而非对某事物的观察。</p>
+</blockquote>
+<blockquote>
+<p>  （对于《呼啸山庄》的男主，）我们虽认为他这样的人物不可能存在，还是要承认他是所有文学作品中最为生动鲜活的创造。</p>
+</blockquote>
+<blockquote>
+<p>  艾米莉似乎可以把我们用于了解自身的文学形象撕个粉碎，然后再给这些无法辨认的透明体注入强劲的生命之风，使之超越现实。这是一种极罕见的造诣。她使生命摆脱了对事实的依赖，寥寥数笔就刻画出一张直导灵魂的面孔，甚至无须再添加身体；她一提起荒原，你瞬间就会感觉狂风大作、暴雨咆哮。</p>
+</blockquote>
+<h4><span id="关于蒙田我们知道什么">关于蒙田，我们知道什么</span></h4>
+<blockquote>
+<p>  纵观整个文学史，能拿起笔成功描绘自己的作家究竟又有多少个呢？或许也只能算上蒙田、佩皮斯和卢梭这几人。《医生的宗教》一书像是一片彩色玻璃，透过它，我们可以看到一片飞速转动的星辰和一个骚动着的古怪灵魂。</p>
+</blockquote>
+<blockquote>
+<p>  唯有一人既能紧跟自己反复无常的思绪讲述自己，又能展现自己那混乱、多变、不完美的灵魂，而且涵盖整体面貌、重量、色彩甚至边界。他就是艺术家蒙田。</p>
+</blockquote>
+<blockquote>
+<p>  一道幻影拂过心头，我们还没有来得及在它的尾巴上撒盐标记，它就从窗户溜走了，要不然就是在摇曳的光亮中倏地一闪，然后慢慢沉落，归于无底的黑暗。</p>
+</blockquote>
+<blockquote>
+<p>  钢笔是个死板的工具，能表达出的东西很少，且带着自己的习惯和套路。它还总摆出居高临下的姿态，把普通人变成了先知，把原先人们讲话中自然存在的磕磕巴巴理顺，谱成了一段威武庄严的文字进行曲。<br>
+  正因如此，蒙田凭借着他无可抑制的活泼气息从无数先辈中脱颖而出。</p>
+</blockquote>
+<blockquote>
+<p>  实事求是地表达自我是一条崎岖的路，因为除了在自我表达上有困难之外，我们面临的重大挑战是怎样保持自我的独立性。我们的灵魂，或者说，我们内在的生命，和我们外在的生活状态有很大的区别。她的品性是错综复杂、模糊不清的，跟那个替她在公开场合履行义务的人物版本有很大的区别。<br>
+  人为了把她研究清楚，恐怕得耗尽一生心血。虽然这一过程可能会影响人的世俗追求，但是最终，人的收获还是很大的。<strong>一个人如果能对自己有清楚的认识，那么他就能保持独立，而且永远都不会感到无聊。</strong></p>
+</blockquote>
+<blockquote>
+<p>  我们是有着独立私生活的人，而且会把这种生活毫不怀疑地当做自己最宝贵的财富。<strong>我们一旦发表什么断言，一旦学会装腔作势，一旦打下条条框框，我们就凋谢了。我们就变成了是为他人、而不是为我们自己而活着的。对于那些为了公共事业自我牺牲的人，我们务必敬重他们，给他们颁发各种荣誉，同时对他们不得不做出的妥协表示同情；但是，就我们自己而言，我们还是避开名气、荣誉以及各种体现我们对他人的义务的各种官职吧。</strong> 让我们好好享受那一口变幻莫测的心灵大锅吧，我们可以感受迷人的混沌状态、丰富的情感冲动以及永恒的个体奇迹——因为，灵魂在每时每刻都会爆发奇迹。</p>
+</blockquote>
+<blockquote>
+<p>  <strong>活动和变化是我们存在的精髓，僵化就意味着死亡；</strong> 服从于别人也意味着死亡。</p>
+</blockquote>
+<blockquote>
+<p>  （就把我们心中所想都说出来吧），这种自由虽然是我们存在的精华所在，可也需要加以控制。所以需要面临另外一个监督者，一个内心的无形的审查员，他最了解真实情况，帮助我们进入只有天资优异的灵魂才能达到的层次。“这种既井然有序、又不失隐秘独立的生活，才是一种精致的生活。”</p>
+</blockquote>
+<blockquote>
+<p>  我们既不能追究怪异，也不能过于文雅，以至脱离自己的同伴。真正有福的人不仅能和邻人轻松畅聊喜欢的运动、住的宅子或惯用的吵架方式，还能与木匠和园丁真诚地交流。与人交流使我们的首要任务。社交和交友是我们的主要乐趣。我们读书，不是为了求知或谋生，而是为了把交流扩大到不同的时代和地域。我们只是在这个世界上沉睡。又或许，还存在另外一个世界，能看清那里的一切事物的人具备一种我们所缺乏的感觉。</p>
+</blockquote>
+<h4><span id="怎么看待艾迪生">怎么看待艾迪生</span></h4>
+<blockquote>
+<p>  一旦大众味口变了，以前的作品是很难让我们感到亲近的。（看到他的作品，）我们心中唤起的与其说是距离感，不如说是差异感。因此，我们或许只能尽责地想象当时他的格言针对的是怎样的一群人。</p>
+</blockquote>
+<blockquote>
+<p>  首先，在两百年后，还有一些可读的作品，这可算作不可鄙视的优点。而在这方面，艾迪生当之无愧是可读之作。再加上艾迪生流畅精美的行文风格，给人感觉像是旋起了小小的波纹、制造了小型瀑布，给光滑的表面带来千变万化。</p>
+</blockquote>
+<blockquote>
+<p>  对于艾迪生的作品，尽管我们说尽了批评意见，不可否认，艾迪生的随笔堪称完美。任何艺术形式发展到至高水平，总有一个时刻，仿佛什么事情都在协同帮助艺术家，他那些毫不做作的绝妙措辞仿佛是浑然天成的。<br>
+  多亏了艾迪生，随笔才成为今天的样子，才能够被知识水平一般的人所用。但是，<strong>我们在随笔里添加了太多的观点和道德说教，太多的激情和深刻道理，结果，随笔这颗能映照蓝天和人生许多微小场景的露珠，已失掉了原先的晶莹和匀称，简直变成了一个被匆匆塞满的手提行李箱。</strong></p>
+</blockquote>
+<blockquote>
+<p>  艾迪生为了消遣，曾经不止一次以温和、明智的态度猜测自己作品将来的命运。他对它们的性质和价值都有公正的认识。他想，有朝一日，也许就在百年之后，他的散文会“像很多古老的盘子一样，分量还是很重，但是样式已经过时了。”<strong>两百年过去了，盘子已经被磨平了，上面的图案也不见了，但是，那银的质地还是一点儿也没被打折。</strong></p>
+</blockquote>
+<h4><span id="哈代的作品好在哪里">哈代的作品好在哪里</span></h4>
+<blockquote>
+<p>  哈代在世的时候，世上还有这么一位小说家使小说艺术成为一个光荣的职业；哈代在世的时候，人们没有任何借口鄙视小说创作。<br>
+  （哈代的第一本小说虽然有诸多缺点，但是）这本书最瞩目的品质在于，透过书页，我们感受到了不断回荡的瀑布轰鸣声。</p>
+</blockquote>
+<blockquote>
+<p>  总之，没有人会否认哈代具备真正小说家的力量，他能让我们相信他的人物是收到他们自己的热情和特质驱动的普通人；又因为哈代具有使人的天赋，我们会感觉他的任务具有我们大家共有的象征性的东西。</p>
+</blockquote>
+<blockquote>
+<p>  哈代的作品 没有像简·奥斯汀等人那样凝练和完美的点，他的笔触不会直捣人物的内心，而是跨过心灵，触及黑暗的荒野和在暴风雨中摇曳的树木。<br>
+  他能摸索到自己的写作手法，靠的是睿智的思路和对所选词句的执着和真诚，而且他的手法往往给人留下难以忘怀的刺痛。<br>
+  哈代给予我们的，不只有对某时某地的生活的记录，他还给了我们整个世界和人类命运的图景。当然，这个图景也曾呈现给这个想象力丰富的人，这个诗意深厚的天才，这个充满温情与人性之光的灵魂。</p>
+</blockquote>
+<h4><span id="好的随笔有什么特质">好的随笔有什么特质</span></h4>
+<blockquote>
+<p>  在所有文学形式中，随笔是最不需要使用长单词的。控制随笔的原则只有简单的一条：它必须给人乐趣。随笔就是要把我们围住，用一道帷幕将世界遮盖起来。</p>
+</blockquote>
+<blockquote>
+<p>  随笔中是容不下任何杂质的。无论是用什么办法，无论是费力雕琢还是浑然天成，还是靠两者的结合，随笔必须是纯粹的——纯得像水，纯得像酒，只是不能流于单调、死板或是含有外来杂质。<br>
+  随笔的范围受到严格的控制，所引用的事实必须不加以修饰。完全的真实能赋予文章权威性；范围的狭小便于给文章定型，提升文章的强度。</p>
+</blockquote>
+<blockquote>
+<p>  如果随笔和传记或小说比起来，拥有更多的使用大胆笔触和暗喻的自由，而且还能经过不断润色，直至表面读起来每一点都闪闪发光，这样做是暗藏危险的。首先，我们很快就看到了装饰物；很快，文章的流动感——这可是文学的元气所在——也变弱了；文字不再像波光粼粼的水流一样向前涌动，或是在静止中积聚最深的兴奋，而是一下子凝结成了冰花，只能保证一夜的光彩，到了第二天就俗不可耐了。主题越是微不足道，作者就越容易强调表面上的修饰。</p>
+</blockquote>
+<blockquote>
+<p>  尽管个性之于文学必不可少，个性同时也构成了文学最危险的敌人，要想在文学中表达“自我”，作家必须深谙写作之道。作家最忌的就是一成不变地只写自我——这就是问题所在。我们眼睁睁地看着微不足道的个性在没完没了的印刷书页中被不断分解，心中一阵厌恶。若把这些琐碎之物当成聊天的素材，我们肯定会很有兴趣，还会觉得作家真是个好酒友。但是，文学的语境是苛刻的。而且光是有趣、高尚甚至博学聪颖是不够的，除非——你必须知道如何写作。</p>
+</blockquote>
+<blockquote>
+<p>  （对于描写完全属于生活、充满了生活本身的真实感的作品，）你不会只读了一遍就放弃阅读。生活中总有东西不断萌发、不断变化、不断增添。即使是摆在书橱中的书籍，只要他们是有生机的，就会不断经历改变。我们总会不自觉地想要再看看他们；然后我们发现他们已经变了。</p>
+</blockquote>
+<blockquote>
+<p>  写作的艺术必须以对某个思想的强烈依赖为支柱。这种思想一定能深深为人信服、被人准确地领会，并且因此为文字定型。<br>
+  思想转入文字的过程需要调动多方面的才能，他们有时起促进作用，有时又会阻挠这一进程。</p>
+</blockquote>
+<h4><span id="感悟现代小说">感悟现代小说</span></h4>
+<blockquote>
+<p>  几个世纪以来，我们在机器制造方面学到了很多知识，但是我们对在文学创作方便学到的东西表示怀疑。我们并没有写得更好，只能说我们在不断摸索，要是从一个制高点观察这一切，我们的摸索之路呈循环趋势。</p>
+</blockquote>
+<blockquote>
+<p>  更确切地说，我们或许认为俄国作家的作品是没有结论的。它们带有一种无解的意味，即在公正地考察下，生活呈现出一个接一个的问题，直到我们读完了小说，这些问题还会在我们脑海中盘旋不止，变成一种压在我们心头的沉闷而无望的审问，最后留给我们令人厌恶的绝望。</p>
+</blockquote>
+<blockquote>
+<p>  “小说的恰当素材”是不恰当的，一切事物，不管其实什么情感，什么思想，都是恰当的素材；而我们头脑和精神的任何品质都可为我们所用，因为我们的任何感知都没有错。</p>
+</blockquote>
+<h4><span id="围绕文字的漫步">围绕文字的漫步</span></h4>
+<blockquote>
+<p>  文字并不活在词典中，而是活在人的思维里。<br>
+  事实上，我们越少探究我们亲爱的“母亲”英语的历史，越能维护好“她”的名声。因为“她”的结合经历可谓数不胜数，早就僭越了“贞洁”标准。<br>
+  因此，要想给文字这一无药可救的流浪者指定任何规则，只能是徒劳。我们为文字所能设定的只能是微不足道的语法和拼写规则。<br>
+  也许这才是文字最引人惊叹的特质——它们需要变化。</p>
+</blockquote>
+<h4><span id="一间自己的房间">一间自己的房间</span></h4>
+<blockquote>
+<p>  如此，女性开始作为一种非常奇怪的复合形象出现。在想象中，她们地位极重，而在现实里，她们无足轻重，她们遍布于诗歌之中，而且从不缺席于历史。在虚构作品中，她们操纵了国王和征服者的生活，而实际上，只要男方父母把他们的手指硬塞进戒指，她们就成了某个男孩的奴隶。</p>
+</blockquote>
+<blockquote>
+<p>  <strong>那些除了头脑和性格之外再无其他所有的中产阶级女性，是绝不可能参加任何的历史运动的，而那些是运动集合在一起，就构成了历史学家对过往的认识。<br>
+  我们经常在伟人的传记中瞥见她们，她们转瞬又消失在背景里，让我觉得她们的一个眼色、一声大笑或许还有一滴眼泪，都被隐藏了起来。</strong></p>
+</blockquote>
+<blockquote>
+<p>  当我在书架上寻找，发现人们无从知晓十八世纪以前的女性，这样的状态是令人悲叹的。</p>
+</blockquote>
+<blockquote>
+<p>  这个世界有着臭名昭著的冷漠本性。这个世界不要求人们写诗歌、小说或是历史，这个世界不需要这些。</p>
+</blockquote>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/article/《李光耀观天下》读书笔记/" data-toggle="tooltip" data-placement="top" title="【未完结】《李光耀观天下》读书笔记">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/article/old-thing-5/" data-toggle="tooltip" data-placement="top" title="【旧事重提系列之五】再见，我的大学">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+                
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+                    <!-- disqus 评论框 start -->
+                    <div class="comment">
+                        <div id="lv-container" data-id="city" data-uid="MTAyMC80MTEyMC8xNzY0NQ=="></div>
+                    </div>
+                    <!-- disqus 评论框 end -->
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    <style>
+      span.toc-nav-number{
+        display: none
+      }
+    </style>
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">书籍信息</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">读书总结</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">书籍摘抄</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">如何去读一本书</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">普通读者</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">寻找真实的多萝西·华兹华斯</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">走进简·奥斯汀的正确方式</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.5.</span> <span class="toc-nav-text">简析《简·爱》和《呼啸山庄》</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.6.</span> <span class="toc-nav-text">关于蒙田，我们知道什么</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.7.</span> <span class="toc-nav-text">怎么看待艾迪生</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.8.</span> <span class="toc-nav-text">哈代的作品好在哪里</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.9.</span> <span class="toc-nav-text">好的随笔有什么特质</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.10.</span> <span class="toc-nav-text">感悟现代小说</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.11.</span> <span class="toc-nav-text">围绕文字的漫步</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.12.</span> <span class="toc-nav-text">一间自己的房间</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#笔记" title="笔记">笔记</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+    <!-- 来必力City版公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+    
+           if (typeof LivereTower === 'function') { return; }
+    
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+    
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- 来必力City版 公共JS代码 end -->
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; wangyinrui 2019 
+                    <br>
+                    Theme by <a href="http://www.huweihuang.com">胡伟煌</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://www.wangyinrui.com">花豆</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=huadoudoudou&repo=huadoudoudou.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://www.wangyinrui.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'r45fhy7653897235wg5ye709d930f62e';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://www.wangyinrui.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

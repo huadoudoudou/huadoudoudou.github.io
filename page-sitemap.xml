@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://www.wangyinrui.com/about/</loc>
+        <lastmod>2019-02-04T06:15:56.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://www.wangyinrui.com/tags/</loc>
         <lastmod>2019-02-02T13:45:12.682Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://www.wangyinrui.com/archive/</loc>
         <lastmod>2019-02-02T13:45:12.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://www.wangyinrui.com/about/</loc>
-        <lastmod>2019-02-02T13:45:12.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

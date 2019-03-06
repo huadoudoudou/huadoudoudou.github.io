@@ -3,13 +3,6 @@
 
 
     <url>
-        <loc>https://www.wangyinrui.com/tags/%E7%AC%94%E8%AE%B0/</loc>
-        <lastmod>2019-02-04T06:31:38.735Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://www.wangyinrui.com/tags/%E6%B8%B8%E8%AE%B0/</loc>
         <lastmod>2019-02-04T06:40:33.909Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,6 +19,20 @@
     <url>
         <loc>https://www.wangyinrui.com/tags/%E6%88%90%E9%95%BF/</loc>
         <lastmod>2019-02-26T12:09:05.678Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.wangyinrui.com/tags/%E8%A7%82%E5%BD%B1%E7%AC%94%E8%AE%B0/</loc>
+        <lastmod>2019-03-06T11:34:00.752Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.wangyinrui.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+        <lastmod>2019-03-06T11:37:12.988Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
